@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image:url({% static 'assets/img/background5.jpg' %})">
+<form method="POST">
+    {% csrf_token %}
+    <h1>Thank you for registering....Your application is accepted.</h1>
+    <a href="{% url 'bankingapp:index' %}" ><h3 align="center">click here to home</h3></a>
+</form>
+</body>
+</html>

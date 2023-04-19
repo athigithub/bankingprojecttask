@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ABC BANK</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Ninestars
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>ABC BANK</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li><a class="nav-link scrolltoactive" href="#services">Home</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Login</a></li>
+          <li><a class="nav-link scrollto" href="#team">Register</a></li>
+          <li class="dropdown"><a href="#"><span>Branches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Thiruvananthapuram">Thiruvanathapuram</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Alappuzha"><span>Alapuzha</span> </i></a>
+
+              </li>
+              <li><a href="https://en.wikipedia.org/wiki/Kollam">Kollam</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Pathanamthitta">Pathanamthitta</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Eranakulam">Eranakulam</a></li>
+            </ul>
+          </li>
+     </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </ul>
+    </div>
+  </header><!-- End Header -->
+
+   <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+
+          <div align="center">
+            <a href="{% url 'bankingapp:registration_form.html' %}" class="btn-get-started scrollto">Click me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+    <!-- ======= Portfolio Section ======= -->
+    <!-- End Portfolio Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+
+    <!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+
+   <!-- End Team Section -->
+
+    <!-- End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <!-- End Contact Us Section -->
+
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+ <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container py-4" >
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+{% block body %}
+{% endblock %}
+
+</body>
+
+</html>

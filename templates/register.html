@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+  <link href="{% static 'assets/css/style1.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+<body>
+  <div class="signin">
+    <div class="back-img">
+      <div class="sign-in-text">
+
+
+      </div><!--/.sign-in-text-->
+      <div class="layer">
+      </div><!--/.layer-->
+      <p class="point">&#9650;</p>
+    </div><!--/.back-img-->
+    <div class="form-section">
+
+      <form action="register" method="post">
+    {% csrf_token %}
+    <table class="center"  >
+        <tr>
+            <td  bgcolor="blue"  align="center" colspan="2"><h3 style="color:beige">Register Here</h3></td>
+
+         </tr>
+
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" name="username" placeholder="@username"></td>
+        </tr>
+
+
+
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" name="pwd1" placeholder="******"></td>
+        </tr>
+        <tr>
+            <td><label>Confirm Password </label></td>
+            <td> <input type="password" name="pwd2" placeholder="******"></td>
+        </tr>
+
+        <tr>
+
+        <td  colspan="2" align="center"><a class="btn btn-primary" href="{% url 'bankingapp:login.html' %}" role="button">Submit</a></td>
+        </tr>
+
+    </table>
+
+
+
+</form>
+    </div><!--/.form-section-->
+
+
+ </div><!--/.signin-->
+</body>
+</html>
